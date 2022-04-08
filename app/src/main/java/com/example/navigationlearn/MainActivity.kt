@@ -19,15 +19,16 @@ class MainActivity : AppCompatActivity() {
 
         navController = findNavController(R.id.nav_host_main)
 
-      /*  binding.bnvMain.setOnItemSelectedListener {
-            when (it.itemId) {
-                R.id.home_action -> navController.navigate(R.id.homeFragment)
-                R.id.second_action -> navController.navigate(R.id.secondFragment)
-            }
-            true
-        }*/
-
         binding.bnvMain.setupWithNavController(navController)
+
+         /* binding.bnvMain.setOnItemSelectedListener {
+              when (it.itemId) {
+                  R.id.homeFragment -> navController.navigate(R.id.homeFragment)
+                  R.id.secondFragment -> navController.navigate(R.id.secondFragment)
+              }
+              true
+          }*/
+
 
     }
 

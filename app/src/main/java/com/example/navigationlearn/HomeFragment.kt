@@ -18,7 +18,7 @@ class HomeFragment : Fragment(R.layout.fragment_home) {
             findNavController().navigate(
                 R.id.action_homeFragment_to_secondFragment,
                 bundleOf("key" to "value", "user" to User("Bekhruzbek", 21)),
-                // for animation 
+                // for animation
                 Utils.navOptions()
             )
         }
